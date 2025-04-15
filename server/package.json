@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint src/*.ts",
+    "format": "npx prettier --check src/*.ts",
+    "start:dev": "nodemon src/index.ts"
   },
   "keywords": [],
   "author": "",

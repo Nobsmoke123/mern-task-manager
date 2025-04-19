@@ -1,42 +1,30 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+
+@theme {
+  --color-purple-primary: #a79ee9;
+  --color-purple-primary-shade: #f0f1ff;
+  --color-purple-primary-shade-2: #cbc8f5;
+  --color-purple-secondary: #edeef6;
+  --color-purple-secondary-text: #968bf0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@utility card {
+  @apply w-80 md:w-100 mt-6 text-left text-3xl tracking-tighter font-bold shadow-lg py-8 px-6 rounded-lg flex flex-col items-center md:items-start;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@utility card-icon-box {
+  @apply w-20 flex justify-center p-4 bg-purple-primary-shade;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+@utility card-icon {
+  @apply text-purple-primary text-4xl;
 }
 
-.card {
-  padding: 2em;
+@utility card-title {
+  @apply mt-6 text-center md:text-left text-3xl tracking-tighter font-bold;
 }
 
-.read-the-docs {
-  color: #888;
+@utility card-body {
+  @apply mt-4 text-lg text-center md:text-left tracking-tighter font-light;
 }
